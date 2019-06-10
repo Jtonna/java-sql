@@ -81,6 +81,12 @@ values('the shire', 'bilbo baggins', '1-hobbit hole', 'bag end', '111', 'middle 
 ### update _Bilbo Baggins_ record so that the postal code changes to _"11122"_.
 > This can be done with UPDATE and WHERE clauses
 
+```
+update Customers
+set PostalCode = '11122'
+where CustomerName = 'the shire'
+```
+
 
 ### list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 > This can be done with SELECT, COUNT, JOIN and GROUP BY clauses. Your count should focus on a field in the Orders table, not the Customer table
